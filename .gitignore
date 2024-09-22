@@ -1,0 +1,15 @@
+/node_modules
+/public/hot
+/public/storage
+/storage/*.key
+/vendor
+.env
+.env.backup
+.phpunit.result.cache
+Homestead.json
+Homestead.yaml
+npm-debug.log
+yarn-error.log
+/app/Libraries/Telegram/.env
+/app/Libraries/Telegram/__pycache__
+/app/Libraries/Telegram/*.session

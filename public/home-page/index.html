@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spiderlab</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+    <!-- Sticky Navbar -->
+   <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/image/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class=""><i class="fa fa-bars fa-2x"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Crypto Tracking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       OSINT Tools
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item" href="#">Darknet Intelligence</a></li>
+                        <li><a class="dropdown-item" href="#">Phone Number Lookup</a></li>
+                        <li><a class="dropdown-item" href="#">Email OSINT</a></li>
+                        <li><a class="dropdown-item" href="#">Social OSINT</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Threat Map</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" aria-expanded="false">
+                        Login/Signup
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li><a class="dropdown-item" href="login.html">Sign Up</a></li>
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Offcanvas for Mobile Menu -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span>Menu</span></h5>
+        <span data-bs-dismiss="offcanvas"><i class="fa-solid fa-close fa-2x"></i></span>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Crypto Tracking</a>
+            </li>
+            
+             <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   OSINT Tools
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="#">Darknet Intelligence</a></li>
+                    <li><a class="dropdown-item" href="#">Phone Number Lookup</a></li>
+                    <li><a class="dropdown-item" href="#">Email OSINT</a></li>
+                    <li><a class="dropdown-item" href="#">Social OSINT</a></li>
+                </ul>
+            </li>
+            
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Threat Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login/Sign Up
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="login.html">Sign Up</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+    <!-- Main slider -->
+    <section class="main-slider">
+            <div class="owl-carousel main-banner owl-theme">
+                <div class="item">
+                    <div class="slider-content">
+                        <div class="container">
+                            <div class="row">
+                                <div class="col-md-5">
+                                    <div class="slider-information">
+                                        <div class="heading-first">
+                                            <h1>SPYDERLAB AML</h1>
+                                        </div>
+                                        <div class="description">
+                                            <p>Illuminate the shadowy woods of Blockchain and OSINT with a radiant beam of light.</p>
+                                        </div>
+                                        <div class="slider-btn">
+                                            <button class="btn btn-price">Get Prices</button>
+                                            <button class="btn btn-more">Learn More</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-7">
+                                    <div class="slider-image">
+                                        <img src="assets/image/sat.svg">
+                                        
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="slider-information">
+                                    <div class="heading">
+                                        <h1>XYZXYZXYZ KZZ</h1>
+                                    </div>
+                                    <div class="description">
+                                        <p>Illuminate the shadowy woods of Blockchain and OSINT with a radiant beam of light.</p>
+                                    </div>
+                                    <div class="slider-btn">
+                                        <button class="btn btn-price">Get Prices</button>
+                                        <button class="btn btn-more">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="slider-image">
+                                    <img src="assets/image/rack.svg">
+                                    
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    </div>
+                </div>
+                <div class="item">
+                    <div class="slider-content">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-md-5">
+                                <div class="slider-information">
+                                    <div class="heading">
+                                        <h1>YYYYZZZXXX CCZ</h1>
+                                    </div>
+                                    <div class="description">
+                                        <p>Illuminate the shadowy woods of Blockchain and OSINT with a radiant beam of light.</p>
+                                    </div>
+                                    <div class="slider-btn">
+                                        <button class="btn btn-price">Get Prices</button>
+                                        <button class="btn btn-more">Learn More</button>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <div class="slider-image">
+                                    <img src="assets/image/cloudvps.svg">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+              </div>
+            
+            </div>
+    </section>
+
+    <!-- service -->
+    <section class="service-product">
+        <div class="service">
+        <div class="container">
+
+            <div class="product-list">
+                <a href="#" class="active" data-tab="crypto-analysis">Crypto Analysis</a>
+                <a href="#" data-tab="osint">OSINT</a>
+                <a href="#" data-tab="dark-web-intelligence">Dark Web Intelligence</a>
+                <a href="#" data-tab="other">Other</a>
+            </div>
+        
+            <div class="service-box-section">
+                <div class="row d-flex flex-wrap">
+                    <div class="col-md-3">
+                        <div class="service-box swiper-container card" id="crypto-analysis">
+                            <img src="assets/image/aml-ico.png" alt="AML Icon">
+                            <h4>Crypto AML </h4>
+                            <p>Crypto Anti-Money Laundering</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-box swiper-container card" id="crypto-analysis">
+                            <img src="assets/image/on-chain-logo.png" alt="On-chain Logo">
+                            <h4>On-Chain Analysis </h4>
+                            <p>Analysing Blockchain</p>
+                        </div>
+                    </div>
+                    <div class="col-md-3">
+                        <div class="service-box swiper-container card" id="crypto-analysis">
+                            <img src="assets/image/off-chain-ico.png" alt="Off-chain Icon">
+                            <h4>Off-Chain Analysis</h4>
+                            <p>Analysing Blockchain</p>
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-3">
+                        <div class="service-box swiper-container card" id="crypto-analysis">
+                            <img src="assets/image/monitoring-ico.png" alt="Monitoring Icon">
+                            <h4>Crypto Tracking</h4>
+                            <p>Crypto Tracking and Monitoring</p>
+                        </div>
+                    </div>
+                    </div>
+                   
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-box swiper-container card" id="osint">
+                            <img src="assets/image/reserve-phone-ico.png" alt="reserve phone icon">
+                            <h4>Reverse Phone Lookup</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                   
+                    <div class="col-md-4">
+                        <div class="service-box swiper-container card" id="osint">
+                            <img src="assets/image/reverse-mail-ico.png" alt="reserve mail icon">
+                            <h4>Reverse Mail Lookup</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box swiper-container card" id="osint">
+                            <img src="assets/image/web-recon-ico.png" alt="web-recon-ico.png">
+                            <h4>Web Reconnaissance</h4>
+                            <p></p>
+                        </div>
+                    </div>
+                    </div>
+                   
+                    <div class="row">
+                        <div class="col-md-4">
+                            <div class="service-box swiper-container card" id="dark-web-intelligence">
+                                <img src="assets/image/onion-ico2.png" alt="onion-ico2.png">
+                                <h4>Onion Search</h4>
+                                <p></p>
+                            </div>
+                        </div>
+                        <div class="col-md-4">
+                            <div class="service-box swiper-container card" id="dark-web-intelligence">
+                                <img src="assets/image/data-leack-ico.png" alt="data-leack-ico.png">
+                                <h4>Search Dataleak TOR, I2P</h4>
+                                <p></p>
+                            </div>
+                        </div>
+    
+                        <div class="col-md-4">
+                            <div class="service-box swiper-container card" id="dark-web-intelligence">
+                                <img src="assets/image/password-ico.png" alt="password-ico.png">
+                                <h4>Password Compliance Check</h4>
+                                <p></p>
+                            </div>
+                        </div>                   
+                    </div>
+
+
+                    <div class="row">
+                    <div class="col-md-4">
+                        <div class="service-box swiper-container card" id="other">
+                            <img src="assets/image/audit-ico.png" alt="audit-ico.png">
+                            <h4>Smart Contract Security Audit</h4>
+                            <p>Audit Smart Contract</p>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="service-box swiper-container card" id="other">
+                            <img src="assets/image/derivative-ico.png" alt="derivative-ico.png">
+                            <h4>Derivative</h4>
+                            <p>Culture products</p>
+                        </div>
+                    </div>
+                    </div>
+                   
+                    
+            </div>
+        </div>
+    </div>
+    </section>
+    <!--all services -->
+    <section class="service-section">
+        <div class="container py-5">
+            <div class="service-details">
+                <div class="heading">
+                   <h2> SpyderLab Service</h2>
+                </div>
+                <div class="description">
+                    <p>Dedicated to resolving issues related to "coin location," "tracking associated addresses," "identifying hacker profiles," and "verification freeze," alongside OSINT.</p>
+                </div>
+            </div>
+            <div class="col-md-12">
+                <div class="canvas-service">
+                  <img src="assets/image/balancing.svg" alt="balancing.svg">
+                </div>
+            </div>
+            
+            <div class="service-content">
+                <div class="row justify-content-center">
+                    <div class="col-md-2">
+                        <div class="service-card">
+                            <img src="assets/image/icon-1.png" alt="Icon 1">
+                            <h4>Analyze the transfer chain of the funding</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="service-card">
+                            <img src="assets/image/icon-2.png" alt="Icon 2">
+                            <h4>Monitor associated addresses</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="service-card">
+                            <img src="assets/image/icon-3.png" alt="Icon 3">
+                            <h4>Dynamic feedback when funding transferred to the exchange</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="service-card">
+                            <img src="assets/image/icon-4.png" alt="Icon 4">
+                            <h4>Track analysis report</h4>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <div class="service-card">
+                            <img src="assets/image/icon-5.png" alt="Icon 5">
+                            <h4>Assist the police to investigate and freeze</h4>
+                        </div>
+                    </div>
+                </div>
+                <a href="#"><button class="btn btn-learn">Learn More</button></a>
+            </div>
+            
+        </div>
+    </section>
+
+    <!-- Address Library -->
+     <section class="address-library">
+        <div class="container">
+            <div class="malicious-address-library py-5">
+                <h2 class="py-2">Malicious Address Library</h2>
+                <p>The threat intelligence engine of SpyderLab gathers data from diverse sources, undergoes thorough cleansing and integration, leveraging artificial intelligence technology to extract precise information from vast datasets. Encompassing content from the dark web to numerous global exchanges, it identifies malicious wallet addresses, including but not limited to BTC, ETH, EOS, XRP, T RX, USDT, surpassing a total count of 100,000. With its extensive capabilities, SpyderLab's threat intelligence engine offers comprehensive support for tracking hacker attacks, coin laundering, and OSINT.</p>
+                <img src="assets/image/mw-yq.png">
+                <a href="#"><button class="btn btn-learn">Learn More</button></a>
+            </div>
+        </div>
+     </section>
+
+     <!-- Customer Cases -->
+      <section class="customer-cases">
+        <div class="container">
+            <div class="customer-cases-details py-5">
+                <h2 class="py-3 customer-cases-heading">Customer Cases</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4">
+                       <div class="card cases-name">
+                        <img src="assets/image/cc-icon-1.png">
+                        <h2>60 <i class="fa-solid fa-plus"></i></h2>
+                        <h6>Wallet APP</h6>
+                       </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card cases-name">
+                         <img src="assets/image/cc-icon-2.png">
+                         <h2>80 <i class="fa-solid fa-plus"></i></h2>
+                         <h6>Exchange</h6>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="card cases-name">
+                         <img src="assets/image/cc-icon-3.png">
+                         <h2>60 <i class="fa-solid fa-plus"></i></h2>
+                         <h6>Asset custody platform</h6>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="card cases-name">
+                         <img src="assets/image/cc-icon-4.png">
+                         <h2>60 <i class="fa-solid fa-plus"></i></h2>
+                         <h6>DeFi</h6>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="card cases-name">
+                         <img src="assets/image/cc-icon-5.png">
+                         <h2>60 <i class="fa-solid fa-plus"></i></h2>
+                         <h6>Investment Agency</h6>
+                        </div>
+                     </div>
+                     <div class="col-md-4">
+                        <div class="card cases-name">
+                         <img src="assets/image/cc-icon-6.png">
+                         <h2>60 <i class="fa-solid fa-plus"></i></h2>
+                         <h6>Others</h6>
+                        </div>
+                     </div>
+                </div>
+            </div>
+        </div>
+      </section>
+    
+    <!-- Spyderlab Plarform -->
+     <section class="spyderlab-platform">
+        <div class="container">
+            <div class="spyderlab-platform-details py-5">
+                <div class="spyderlab-platform-heading">
+                    <h2 class="py-2">Spyderlab Plarform</h2>
+                </div>
+                <div class="spyderlab-platform-description">
+                    <p>SpyderLab, a comprehensive Crypto Tracking and Compliance Platform accessible to all, is crafted by PDPL AML to address and counter cryptocurrency money laundering activities through its robust anti-money laundering tracking system and OSINT integration.</p>
+
+                </div>
+                <div class="counter">
+                    <div class="row justify-content-center">
+                        <div class="col-md-3">
+                          <div class="count d-flex">
+                            <h4 class="count-number">200 </h4><span>K</span>
+                          </div>
+                          <h3>Address Entity</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="count d-flex">
+                                <h4 class="count-number">200 </h4><span>K</span>
+                            </div>
+                            <h3>Address Label</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="count d-flex">
+                                <h4 class="count-number">200 </h4><span>K</span>                          
+                            </div>
+                            <h3>Threat Intelligence</h3>
+                        </div>
+                        <div class="col-md-3">
+                            <div class="count d-flex">
+                                <h4 class="count-number">200 </h4><span>K</span>
+                            </div>
+                            <h3>Risky Address</h3>
+                        </div>
+                    </div>
+                </div>
+                <a href="#"><button class="btn btn-learn">Learn More</button></a>
+            </div>
+        </div>
+
+     </section>
+
+    <!-- blog -->
+    <section class="blog">
+        <div class="container">
+            <div class="blog-details py-5">
+                <h2 class="py-2 text-center">Blog</h2>
+                <div class="row justify-content-center">
+                    <div class="col-md-4 mb-3">
+                        <div class="card blog-information text-center h-100">
+                            <img src="assets/image/haker-img.jpeg" class="img-fluid" alt="Blog image">
+                            <div class="card-body">
+                                <span class="d-block mb-2">Date: 10/5/2024</span>
+                                <div class="about-blog">
+                                    <a href="#"><h4>NORMIE meme token crashed 99% after being hacked.</h4></a>
+                                    <p>On May 26, there was a hacker attack on the meme token Normie (NORMIE), as a result of which the value of the token fell by 99%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card blog-information text-center h-100">
+                            <img src="assets/image/haker-img.jpeg" class="img-fluid" alt="Blog image">
+                            <div class="card-body">
+                                <span class="d-block mb-2">Date: 10/5/2024</span>
+                                <div class="about-blog">
+                                    <a href="#"><h4>NORMIE meme token crashed 99% after being hacked.</h4></a>
+                                    <p>On May 26, there was a hacker attack on the meme token Normie (NORMIE), as a result of which the value of the token fell by 99%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4 mb-3">
+                        <div class="card blog-information text-center h-100">
+                            <img src="assets/image/haker-img.jpeg" class="img-fluid" alt="Blog image">
+                            <div class="card-body">
+                                <span class="d-block mb-2">Date: 10/5/2024</span>
+                                <div class="about-blog">
+                                    <a href="#"><h4>NORMIE meme token crashed 99% after being hacked.</h4></a>
+                                    <p>On May 26, there was a hacker attack on the meme token Normie (NORMIE), as a result of which the value of the token fell by 99%.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+   
+     <!-- partners -->
+     <section class="partners">
+        <div class="container">
+            <div class="partners-details py-5">
+                <h2 class="text-center">Partners</h2>
+                <div class="marquee">
+                    <div class="marquee-content">
+                        <img src="assets/image/partners/binance.png" alt="Binance">
+                        <img src="assets/image/partners/secureshift.png" alt="SecureShift">
+                        <img src="assets/image/partners/trend.png" alt="Trend">
+                        <img src="assets/image/partners/zilliqa.png" alt="Zilliqa">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer py-3">
+        <div class="container">
+            <div class="footer-information py-4">
+                <div class="row ">
+                    <div class="col-md-3">
+                        <div class="heading">
+                            Language
+                        </div>
+                        <ul>
+                            <div class="d-flex">
+                                <a href=""><li>English</li></a>
+                                <a href=""><li>Română</li></a>
+                            </div>
+
+                            <div class="d-flex">
+                                <a href=""><li>Español</li></a>
+                                <a href=""><li>Polski</li></a>
+                            </div>
+
+                            <div class="d-flex">
+                                <a href=""><li>Français</li></a>
+                                <a href=""><li>Українська</li></a>
+
+                            </div>
+                            <div class="d-flex">
+                                <a href=""><li>Italiano</li></a>
+                                <a href=""><li>Кыргыз</li></a>
+
+                            </div>
+                            <div class="d-flex">
+                                <a href=""><li>Nederlands</li></a>
+                                <a href=""><li>Қазақша</li></a>
+                            </div>
+                        
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="heading">
+                            Support
+                        </div>
+                        <ul class="support">
+                            <a href=""><li>Create Ticket</li></a>
+                            <a href=""><li>Knowledge Base</li></a>
+                            <a href=""><li>Contact Us</li></a>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="heading">
+                            Company
+                        </div>
+                        <ul class="company">
+                            <a href=""><li>About Us</li></a>
+                            <a href=""><li>Acceptable Usage Policy</li></a>
+                            <a href=""><li>Privacy Policy</li></a>
+                            <a href=""> <li>Terms of Service</li></a>
+                            
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href=""><img src="assets/image/logo.png"></a> 
+                        </div>
+                        <div class="about">
+                            <p>
+                                Spyderlab.org is a leading blockchain forensic, dark web intelligence & OSINT platform.
+                            </p>
+                        </div>
+                        <div class="social">
+                            <a href="https://www.facebook.com/spyderlab" target="_blank"><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href="https://www.x.com/spyderlab" target="_blank"><i class="fa-brands fa-x-twitter"></i></a>
+                            <a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a>
+                            <a href="" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+                            <a href="" target="_blank"><i class="fa-brands fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright text-center py-2">
+            <p>&copy; 2024 <a href="#" style="text-decoration: none;color: rgb(0, 166, 255);">Pattern Drive Private Limited</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- js -->
+    <script src="assets/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/fontawesome/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

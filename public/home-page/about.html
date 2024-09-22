@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spiderlab</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/fontawesome/css/all.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/owlcarousel/css/owl.theme.default.min.css">
+</head>
+<body class="d-flex flex-column min-vh-100">
+    
+   <!-- Sticky Navbar -->
+   <nav class="navbar navbar-expand-lg sticky-top">
+    <div class="container">
+        <a class="navbar-brand" href="#"><img src="assets/image/logo.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
+            <span class=""><i class="fa fa-bars fa-2x"></i></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Crypto Tracking</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Blog</a>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                       OSINT Tools
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                        <li><a class="dropdown-item" href="#">Darknet Intelligence</a></li>
+                        <li><a class="dropdown-item" href="#">Phone Number Lookup</a></li>
+                        <li><a class="dropdown-item" href="#">Email OSINT</a></li>
+                        <li><a class="dropdown-item" href="#">Social OSINT</a></li>
+                    </ul>
+                </li>
+
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Threat Map</a>
+                </li>
+               
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Pricing</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      About
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                        <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                    </ul>
+                </li>
+                
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown2" role="button" aria-expanded="false">
+                        Login/Signup
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown2">
+                        <li><a class="dropdown-item" href="login.html">Sign Up</a></li>
+                        <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    </ul>
+                </li>
+
+            </ul>
+        </div>
+    </div>
+</nav>
+
+<!-- Offcanvas for Mobile Menu -->
+<div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar" aria-labelledby="offcanvasNavbarLabel">
+    <div class="offcanvas-header">
+        <h5 class="offcanvas-title" id="offcanvasNavbarLabel"><span>Menu</span></h5>
+        <span data-bs-dismiss="offcanvas"><i class="fa-solid fa-close fa-2x"></i></span>
+    </div>
+    <div class="offcanvas-body">
+        <ul class="navbar-nav">
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Crypto Tracking</a>
+            </li>
+            
+             <li class="nav-item">
+                <a class="nav-link" href="#">Blog</a>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                   OSINT Tools
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown1">
+                    <li><a class="dropdown-item" href="#">Darknet Intelligence</a></li>
+                    <li><a class="dropdown-item" href="#">Phone Number Lookup</a></li>
+                    <li><a class="dropdown-item" href="#">Email OSINT</a></li>
+                    <li><a class="dropdown-item" href="#">Social OSINT</a></li>
+                </ul>
+            </li>
+            
+
+            <li class="nav-item">
+                <a class="nav-link" href="#">Threat Map</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  About
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="about.html">About Us</a></li>
+                    <li><a class="dropdown-item" href="contact.html">Contact Us</a></li>
+                </ul>
+            </li>
+            
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Login/Sign Up
+                </a>
+                <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <li><a class="dropdown-item" href="login.html">Login</a></li>
+                    <li><a class="dropdown-item" href="login.html">Sign Up</a></li>
+                </ul>
+            </li>
+
+        </ul>
+    </div>
+</div>
+
+    <!-- about -->
+     <section class="about">
+            <div class="container">
+            <div class="about-information">
+                <div class="row">
+                    <div class="col-md-3">
+                        <div class="about-img">
+                            <img src="assets/image/logo.png">
+                        </div>
+                        
+                    </div>
+                    <div class="col-md-9">
+                        <div class="about-description">
+                            <h3>About SpyderLab</h3>
+                                <p>SpyderLab is the leading provider of public information through its dedicated APIs and huge database. It primarily aims to provide deep analytics data at par with the search query in real time. Users can search for publicly posted information on diverse platforms including Facebook, Instagram, Twitter, and WhatsApp through either phone number or email id.
+                                At SpyderLab, we strive to provide information scraping the darknet such as malicious blockchain transactions, cybercrime, criminal activities, drug sales, and other illicit activities. This information is specifically meant for law enforcement agencies to combat increasing cybercrimes. Thousands of sites across multiple darknets are added to our database every day, letting users analyze the data for specific use cases.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+           </div>
+        </div>
+     </section>
+     <section class="team-development">
+        <div class="container">
+            <div class="team-development-details py-5">
+                <div class="row">
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="team-development-card py-5">
+                                <h3>Origins & Team</h3>
+                                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ab expedita rerum, velit molestiae, nemo ea adipisci assumenda commodi voluptatum doloremque neque, ducimus dolor ipsam nihil magni vitae unde! Veritatis, distinctio.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="team-development-card">
+                                <h3>Developments</h3>
+                                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Distinctio maxime numquam quo incidunt quaerat amet eum quas voluptas repudiandae, illo aut labore eaque beatae consectetur, explicabo magnam, laborum dolorem possimus?</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+     </section>
+     <section class="about-section">
+        <div class="container">
+            <div class="about-details">
+                <div class="row">
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="about-card">
+                                <div class="about-logo">
+                                    <img src="assets/image/about-logo.svg">
+                                </div>
+                               <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, magnam tempora. Doloribus, explicabo vel veritatis neque eligendi sed err.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="about-card">
+                                <div class="about-logo">
+                                    <img src="assets/image/about-logo-2.svg">
+                                </div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, magnam tempora. Doloribus, explicabo vel veritatis neque eligendi sed err.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-4">
+                        <div class="card">
+                            <div class="about-card">
+                                <div class="about-logo">
+                                    <img src="assets/image/about-logo-3.svg"> 
+                                </div>
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Labore, magnam tempora. Doloribus, explicabo vel veritatis neque eligendi sed err.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+     </section>
+    <!-- Footer -->
+    <footer class="footer py-3">
+        <div class="container">
+            <div class="footer-information py-4">
+                <div class="row ">
+                    <div class="col-md-3">
+                        <div class="heading">
+                            Hosting
+                        </div>
+                        <ul>
+                            <a href=""><li>Web Hosting</li></a>
+                            <a href=""><li>Dedicated Server</li></a>
+                            <a href=""><li>Cloud Virtual (VPS)</li></a>
+                            <a href=""><li>Domain Names</li></a>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="heading">
+                            Support
+                        </div>
+                        <ul>
+                            <a href=""><li>Create Ticket</li></a>
+                            <a href=""><li>Knowledge Base</li></a>
+                            <a href=""><li>Contact Us</li></a>
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="heading">
+                            Company
+                        </div>
+                        <ul>
+                            <a href=""><li>About Us</li></a>
+                            <a href=""><li>Acceptable Usage Policy</li></a>
+                            <a href=""><li>Privacy Policy</li></a>
+                            <a href=""> <li>Terms of Service</li></a>
+                            
+                        </ul>
+
+                    </div>
+                    <div class="col-md-3">
+                        <div class="logo">
+                            <a href=""><img src="assets/image/logo.png"></a> 
+                        </div>
+                        <div class="about">
+                            <p>
+                               Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magni porro eveniet ad iste quidem.
+                            </p>
+                        </div>
+                        <div class="social">
+                            <a href=""><i class="fa-brands fa-facebook-f"></i></a>
+                            <a href=""><i class="fa-brands fa-twitter"></i></a>
+                            <a href=""><i class="fa-brands fa-instagram"></i></a>
+                            <a href=""><i class="fa-brands fa-youtube"></i></a>
+                            <a href=""><i class="fa-brands fa-pinterest-p"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr>
+        <div class="copyright text-center py-2">
+            <p>&copy; 2024 <a href="#" style="text-decoration: none;color: rgb(0, 166, 255);">Pattern Drive Private Limited</a>. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <!-- js -->
+    <script src="assets/jquery/jquery-3.7.1.min.js"></script>
+    <script src="assets/owlcarousel/js/owl.carousel.min.js"></script>
+    <script src="assets/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/fontawesome/js/all.min.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>

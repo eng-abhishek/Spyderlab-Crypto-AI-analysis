@@ -1,0 +1,109 @@
+.partner{
+	position: relative;
+	width: 100%;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 1em;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-o-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	overflow: hidden;
+}
+.partner::before, .partner::after{
+	content: '';
+	position: absolute;
+	top: 0;
+	width: 40px;
+	height: 100%;
+	filter: blur(3px);
+   /*background-color: #ebebeb;*/
+	display: block;
+	z-index: 99;
+}
+.partner::before{
+	left: -15px;
+}
+.partner::after{
+	right: -15px;
+}
+.partner-content{
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: box;
+	display: flex;
+	-webkit-animation-name: partner;
+	        animation-name: partner;
+	-webkit-animation-play-state: running;
+	        animation-play-state: running;
+	-webkit-animation-duration: 30s;
+	        animation-duration: 30s;
+	-webkit-animation-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+	        animation-timing-function: cubic-bezier(0.0, 0.0, 1.0, 1.0);
+	-webkit-animation-iteration-count: infinite;
+	        animation-iteration-count: infinite;
+}
+.partner-content:hover{
+	-webkit-animation-play-state: paused;
+	animation-play-state: paused;
+}
+.partner-single{
+	width: 300px;
+	margin: 0 0.5em;
+	padding: 0.5em;
+	display: -webkit-inline-box;
+	display: -ms-inline-flexbox;
+	display: inline-flex;
+	-webkit-box-align: center;
+	-o-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-o-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-transition: all 0.2s ease;
+	-o-transition: all 0.2s ease;
+	transition: all 0.2s ease;
+}
+.partner-single img{
+	max-width: 200px;
+	width: 100%;
+	/*height: 100px;*/
+	-o-object-fit: contain;
+	   object-fit: contain;
+	z-index: -1;
+}
+.partner-single:hover{
+	-webkit-transform: scale(1.1);
+	-ms-transform: scale(1.1);
+	transform: scale(1.1);
+	cursor: pointer;
+}
+@-webkit-keyframes partner{
+	0%{
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+	100%{
+		-webkit-transform: translate(-50%);
+		-ms-transform: translate(-50%);
+		transform: translate(-50%);
+	}
+}
+@keyframes partner{
+	0%{
+		-webkit-transform: translateX(0);
+		-ms-transform: translateX(0);
+		transform: translateX(0);
+	}
+	100%{
+		-webkit-transform: translate(-50%);
+		-ms-transform: translate(-50%);
+		transform: translate(-50%);
+	}
+}
